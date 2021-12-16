@@ -9,7 +9,7 @@
 
 
     <link rel="stylesheet" href="css/home.css">
-    <!-- <link rel="stylesheet" href="css/navbar.css"> -->
+    <link rel="stylesheet" href="css/navbar.css">
     <link rel="icon" href="https://d35ppnqksufxmo.cloudfront.net/frontend_website/favicon.ico">
     <style>
     
@@ -18,12 +18,21 @@
 </head>
 
 <body class="website-home">
-    <div class="navbarfinal">
+    <!-- <div class="navbarfinal">
         <div id="navbarr"></div>
 
         <div id="navbarr1"></div>
-    </div>
+    </div> -->
 
+    <div class="navbarfinal">
+        <div id="navbar">
+            <%- include("./partials/navbar.ejs") %>
+        </div>
+
+        <div id="navbar1">
+            <%- include("./partials/navbar4.ejs") %>
+        </div>
+    </div>
 
     <div class="modalp" id="modalp">
         <div class="modal-header">
@@ -687,25 +696,25 @@
 
 <script src="javascript/home.js"></script>
 <script type="module" >//removed type module
-    import navbar from "../public/javascript/navbar3.js";
+    // import navbar from "../public/javascript/navbar3.js";
 
-    // const navbar = require("../public/javascript/navbar3")
+    // // const navbar = require("../public/javascript/navbar3")
     
 
-     let navbar_div = document.getElementById("navbarr")
+    //  let navbar_div = document.getElementById("navbarr")
     
 
-      navbar_div.innerHTML = navbar();
+    //   navbar_div.innerHTML = navbar();
      
-      import navbar1 from "../public/javascript/navbar4.js";
+    //   import navbar1 from "../public/javascript/navbar4.js";
 
-    // const navbar1 = require("../public/javascript/navbar4")
+    // // const navbar1 = require("../public/javascript/navbar4")
 
     
-      let navbar_div1 = document.getElementById("navbarr1")
+    //   let navbar_div1 = document.getElementById("navbarr1")
 
  
-      navbar_div1.innerHTML = navbar1();
+    //   navbar_div1.innerHTML = navbar1();
       var abc = document.getElementById("a1");
        abc.style.color = "blue"
        abc.style.borderBottom ="3px solid blue"

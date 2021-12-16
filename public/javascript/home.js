@@ -305,7 +305,7 @@ let MUMBAI = ["Andheri - Kurla Road",
     "goregaon (E)",
     "goregaon (W)",
     "international airport"
-];
+]
 
 let BANGALORE = ["around Railway Station",
 "begur Kopa Road",
@@ -624,7 +624,7 @@ function validation(e) {
         console.log(update);
 
 
-        window.location.href = "fare_estimate.html"
+        // window.location.href = "fare_estimate.html"
     }
 
 
